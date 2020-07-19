@@ -1,0 +1,45 @@
+#popUp{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 1000ms;
+}
+
+#popUp #boxPopUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: darkslategray;
+    width: 30vw;
+    height: 30vh;
+
+}
+
+#boxPopUp img{
+    
+    margin-top: 5vh;
+    width: 8vw;
+}
+#boxPopUp h3{
+    margin: 0 auto;
+}
+#boxPopUp #closePU,#closePU img{
+    position: relative;
+    width: 3vw;
+    left: 45%;
+    bottom: 65%;
+}
+
+#popUp.hide{
+    display: none;
+}

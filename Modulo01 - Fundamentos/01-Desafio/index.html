@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/popUp.css">
+    <title>Desafio</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Notas</h1>
+    </header>
+    <main>
+        <form id="form-input">
+            <div id="title" class="field-group">
+                <label>Titulo:</label>
+                <input id= "input-title" type="text" placeholder="Informe um Titulo...">
+            </div>
+            <div id="description"class="field-group">
+                <label>Descrição:</label>
+                <textarea name="descrip"   id="description-area" form="form-input"  cols="30" rows="10">
+        
+                </textarea>
+            </div>
+            <button id="add-note" type="button">Adicionar</button>
+        </form>
+        <div id="register" class="register" >
+            <h2>Notas Cadastrados:</h2>
+            <div id="notes" class="notes">
+                <!-- <div class="note"> 
+                    <h3>Titulo</h3>
+                    <p>Descrição</p>
+                    <p id="date"></p>
+                    <img class="close" src="https://pluspng.com/img-png/png-hd-x-open-pluspng-com-x-png-hd-2000.png" alt="x">
+                </div> -->
+                <h4 id="noNotes">Nenhuma nota registrada!</p>
+               
+            </div>
+        </div>
+        
+       
+
+        <div id="end_by">
+            <p>
+                <strong>by: </strong><a href="https://www.linkedin.com/in/henrickyl/">Henricky Lima</a>
+            </p>
+        </div>
+    </main>
+
+    <div id="popUp" class="hide">
+        <div id="boxPopUp">
+            <img src="img/tick.gif" alt="">
+            <h3>Adicionado com Sucesso!</h3>
+            <a id="closePU" href="#"><img class="close" src="img/x.png" alt="x"> </a>
+        </div>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+</html>
