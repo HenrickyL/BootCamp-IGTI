@@ -79,14 +79,7 @@ function render(){
         h3 = title
         p = descript
 
-        inputTitle.value = h3.textContent
-        form[id="description-area"].value = p.textContent
-
-        inputTitle.classList.add("editing")
-        form[id="add-note"].classList.add("editing")
         
-        form[id="add-note"].textContent="Editar"
-        globalNotes.splice(i,1)
     }
 
 
@@ -104,16 +97,12 @@ function render(){
             //crio os elementos
             let h3 = document.createElement("h3") ;
             h3.classList.add("clicable")
-            h3.addEventListener("click",()=>{
-                editeNoteContent(h3,p,i)
-            })
+            
 
 
             let p = document.createElement("p");
             p.classList.add("clicable")
-            p.addEventListener("click",()=>{
-                editeNoteContent(h3,p,i)
-            })
+            
 
             // let dateNote = document.createElement("span");
             // dateNote.classList.add("date")
@@ -130,6 +119,30 @@ function render(){
                 }
                 render();
             })
+
+        //funções
+        h3.addEventListener("click",()=>{
+            inputTitle.value = h3.textContent
+            form[id="description-area"].value = p.textContent
+
+            inputTitle.classList.add("editing")
+            form[id="add-note"].classList.add("editing")
+            
+            form[id="add-note"].textContent="Editar"
+            globalNotes.splice(i,1)
+        })
+        p.addEventListener("click",()=>{
+            inputTitle.value = h3.textContent
+            form[id="description-area"].value = p.textContent
+
+            inputTitle.classList.add("editing")
+            form[id="add-note"].classList.add("editing")
+            
+            form[id="add-note"].textContent="Editar"
+            globalNotes.splice(i,1)
+        })
+
+
         //atribuições
             h3.textContent = n.title
             p.textContent = n.description
