@@ -3,7 +3,7 @@
 
 # Atividade Prática
 
-<img src="desafio.gif" style="width=100vw;margin:auto;">
+<img src="desafio.gif" style="width=200px;margin:auto;">
 
 * **Demonstrado:**
 
