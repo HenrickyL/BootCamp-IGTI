@@ -1,0 +1,134 @@
+:root {
+    --title-color: #4D0085;
+    --color-secundary: #0B8552;
+    --color-seg-light:#0DD17F;
+    --color-primary: #85500D;
+    --color-pri-light:#D18015;
+  }
+
+body{
+    background-color: var(--color-secundary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: var(--title-color);
+    font-size: 3rem;
+    
+}
+h2{
+    font-size: 2rem;
+    margin-left:5vw ;
+}
+
+#cabeçalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding: 1vw;
+    width: 95vw;
+    text-shadow: 2px 3px 3px black;
+}
+#cabeçalho #text-input, #cabeçalho #button{
+    border: none;
+    height: 30px;
+    padding: 0;
+}
+#cabeçalho #text-input{
+    width: 90vw;  
+    border-radius: 8px;
+    border-style: none;
+    border-bottom: 2px solid;
+    font-size: 20px;
+    text-align: center;
+    
+} 
+#cabeçalho #button{
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 6vw;
+    margin-left:-6vw;
+    border-radius: 0 8px 8px 0 ;
+    background-color: var(--color-seg-light);
+    
+} 
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 5vh;
+}
+
+.results,.statistics{
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0vh 1vw;
+    padding-bottom: 2vh;
+    background-color: var(--color-primary);
+    box-shadow: 1vh 1vh 10px black;
+}
+
+main .results{
+    
+    width: 50vw;
+    margin-right: 2vw;
+}
+.statistics{
+
+    width: 30vw;
+}
+
+main .user{
+    padding: 1vw;
+    /* border: 1px solid; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-pri-light);
+    margin: 2vh;
+}
+main .user:hover{
+    background-color: var(--color-pri-light);
+    box-shadow: 3px 3px 5px black;
+    border: 1px solid;
+}
+.user h4{
+    padding: 1vh;
+    margin: 0;
+    
+}
+.user span{
+    margin-left: 1vw;
+}
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 2vw;
+}
+
+.empth-text,.empth-statistics, .data-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 20px;
+    background-color: var(--color-pri-light);
+    padding: 1vw;
+    border-radius: 8px;
+}
+
+
+
+
+#by{
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    left:85vw;
+}
