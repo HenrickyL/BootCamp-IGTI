@@ -3,7 +3,7 @@
 
 # Sistema de Filtro de Usuários
 
-<img src="print.jpeg" width="300px" style="display:flex; margin: auto;">
+<img src="img/print.jpeg" width="300px" style="display:flex; margin: auto;">
 
 Criar uma aplicação para filtrar usuários e mostrar estatísticas a partir do filtro definido.
 
